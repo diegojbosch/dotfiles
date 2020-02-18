@@ -1,0 +1,14 @@
+[user]
+	name = Diego Bosch
+	email = diegojbosch@gmail.com
+[color]
+	ui = auto
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	graph = log --all --graph --decorate --oneline
+[core]
+	excludesfile = ~/.gitignore_global
